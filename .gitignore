@@ -1,0 +1,8 @@
+### git ignore ###
+
+# Logs
+logs
+*.log
+
+#Dependency directorys
+node_modules/

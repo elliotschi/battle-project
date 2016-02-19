@@ -1,0 +1,26 @@
+{
+  "name": "battle-project",
+  "version": "1.0.0",
+  "description": "> League of Legend Stats",
+  "main": "index.js",
+  "ignore" : [
+    "node_modules"
+  ],
+  "dependencies": {
+    "express": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ycube/battle-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ycube/battle-project/issues"
+  },
+  "homepage": "https://github.com/Ycube/battle-project#readme"
+}
