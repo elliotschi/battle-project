@@ -6,3 +6,4 @@ logs
 
 #Dependency directorys
 node_modules/
+app/lib/
