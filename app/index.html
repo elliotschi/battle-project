@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="lolStats">
   <head>
-    <title>LoLStatS</title>
+    <title>LoLStats</title>
   </head>
 
   <body>
-    <h1>Hello World</h1>
+    
+    <div class="container">
+      <div ui-view></div>
+    </div>
+    
+    <script src="./lib/angular/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <!-- <script src="./components/stats/stats.js"></script> -->
+    <script src="./components/landing/landing.js"</script>
   </body>
 </html>
