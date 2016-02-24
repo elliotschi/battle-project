@@ -11,12 +11,12 @@ angular.module('lolStats', [
   
   $stateProvider
     .state('landing', {
-      templateUrl: './components/landing/landing.html',
+      templateUrl: 'components/landing/landing.html',
       url: '/',
       controller: 'LandingController'
     })
     .state('stats', {
-      templateUrl:'./components/stats/stats.html',
+      templateUrl:'components/stats/stats.html',
       url: '/stats',
       controller: 'StatsController'
     });

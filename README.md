@@ -11,6 +11,7 @@
 
 ## How to Get Started ##
   > npm install
+  > bower install
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
