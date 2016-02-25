@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "League of Legend Stats",
   "main": "app.js",
-  "ignore" : [
+  "ignore": [
     "node_modules"
   ],
   "dependencies": {
     "body-parser": "latest",
     "express": "latest",
-    "mongoose" : "latest",
-    "morgan": "latest"
+    "mongoose": "latest",
+    "morgan": "latest",
+    "request": "^2.69.0"
   },
   "devDependencies": {},
   "scripts": {
