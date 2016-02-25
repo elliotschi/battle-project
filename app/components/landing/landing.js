@@ -4,17 +4,21 @@ angular.module('lolStats.landing', [])
     $scope.userName = '';
     
     $scope.sendData = function(userName) {
-      $http({
+      return $http({
         method: "POST",
         url : '/',
         data : { userName : userName}
-      }).then (function (res) {
-        console.log("success");
-        console.log(res);
-      }).then($location.path('/stats'))
-    }
+      })
+      .then (function (res) {
+        console.log(res.data, "res.data");
+      })
+    };
 
     $scope.sendName = function() {
-      sendData($scope.userName);
+      $scope.sendData($scope.userName)
+        .then(function(res) {
+          $location.path('/stats')
+        });
     }
+
   }]);

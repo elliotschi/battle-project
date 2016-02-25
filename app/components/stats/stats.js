@@ -1,6 +1,8 @@
 angular.module('lolStats.stats', [])
 
   .controller('StatsController', ['$scope', function($scope) {
+
+    
     // var getData = function (username) {
     //   $http({
     //     method: "POST",
