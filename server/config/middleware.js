@@ -12,5 +12,5 @@ module.exports = function(app,express) {
 
   app.use('/', router);
 
-  require('../landing/landingRoutes.js')(router)
+  require('../landing/landingRoutes.js')(router);
 };
