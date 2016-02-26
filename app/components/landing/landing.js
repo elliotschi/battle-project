@@ -10,7 +10,7 @@ angular.module('lolStats.landing', [])
         data : { userName : userName}
       })
       .then (function (res) {
-        console.log(res.data, "res.data");
+        console.log(res, "res");
       })
     };
 
