@@ -10,10 +10,8 @@ module.exports = {
       if (err) {
         res.status(401).send();
       } else {
-        // console.log(res)
-        console.log(body)
         var playerStats = JSON.parse(body);
-        res.json(body);
+        res.json(playerStats);
       }
     })
   }

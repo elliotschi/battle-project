@@ -1,24 +1,27 @@
 angular.module('lolStats.landing', [])
-  
-  .controller('LandingController', ['$scope', '$http', '$location',function ($scope, $http, $location) {
-    $scope.userName = '';
-    
-    $scope.sendData = function(userName) {
-      return $http({
-        method: "POST",
-        url : '/',
-        data : { userName : userName}
-      })
-      .then (function (res) {
-        console.log(res, "res");
-      })
+
+  .controller('LandingController', ['$scope', '$location', 'landingService' ,function ($scope, $location, landingService) {
+    $scope.userName = 'rondomvp';
+
+    $scope.sendUsername = function(){
+      landingService.sendData($scope.userName)
+        .then(function(res){ 
+          landingService.data = res;
+        })
+        .then(function() { $location.path('/stats')});
     };
+      
+  }])
+  .factory('landingService', function ($http) {
+      //service stores shared data
+      return {
+        sendData : function(userName) {
+          return $http({
+            method : "POST",
+            url : '/',
+            data : {userName : userName}
+          });
+        }
+      };
 
-    $scope.sendName = function() {
-      $scope.sendData($scope.userName)
-        .then(function(res) {
-          $location.path('/stats')
-        });
-    }
-
-  }]);
+});
