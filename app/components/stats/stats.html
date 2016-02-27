@@ -1,9 +1,8 @@
 <div class="container-fluid main">
  <h1>Stats Page</h1>
  <p>{{ userName }}</p>
- 
  <div ng-repeat="id in champList">  
-   <div>ChampionId: {{id}}</div>
+   <div>Champion: {{id}}</div>
  </div>
  <div ng-repeat="stat in champStats">
    <div>Won: {{stat.totalSessionsWon}}</div>
