@@ -1,17 +1,25 @@
 # Battle-Project #
- 
-## Heading ##
-  > League of Legend Stats
-
-## Sub-Heading ##
-  > Findout your League of Legend Stats
+  > Find out your League of Legend Stats
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Enter your username and season to see your wins and loss for each champion you've used
 
 ## How to Get Started ##
-  > npm install
-  > bower install
+```sh
+ fork/clone the repo
+ cd Battle-Project
+ bower install
+ npm istall
+```
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+## Tech ##
+* [AngularJS](http://angularjs.org) - HTML enhanced for web apps!
+* [node.js](http://nodejs.org) - evented I/O for the backend
+* [Express](http://expressjs.com) - fast node.js network app framework
+
+### Todos ###
+
+ - Write Tests
+ - Edit CSS
+ - Add Code Comments
+ - More Features
