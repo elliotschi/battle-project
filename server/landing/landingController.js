@@ -12,9 +12,13 @@ module.exports = {
     request(urlRiot, function(err, result, body) {
       if (!err && res.statusCode == 200) {
         var data = JSON.parse(body);
-        var summonerId = data[name].id;
-        //have to add error handling when summonerId is wrong
-        utils.getPlayerStats(req, res, summonerId, season);
+        if (!data[name]) {
+          //need to fix error handling later
+          res.status(404).send();
+        } else {          
+          var summonerId = data[name].id;
+          utils.getPlayerStats(req, res, summonerId, season);
+        }
       }
     })
   }

@@ -1,16 +1,10 @@
 angular.module('lolStats.stats', [])
 
   .controller('StatsController', ['$scope', 'landingService', function($scope, landingService) {
-    // $scope.name = landingService.data.userName;
-
-   //do something with LandingService to display data
    var stats = landingService.data;
-   ////////STATS///////////
-   // console.log(stats);
-   // ///////////////
    $scope.stats = stats;
-   $scope.userName = stats.config.data.userName || null;
-   $scope.champions = stats.data.champions; //this is an array
+   $scope.userName = stats.config.data.userName || "DNE";
+   $scope.champions = stats.data.champions; 
    $scope.champList = [];
    $scope.champStats = [];
 
@@ -27,4 +21,5 @@ angular.module('lolStats.stats', [])
     var champId = $scope.champList[j].toString(); 
         $scope.champList[j] = champIds[champId];
     }
+
   }]);

@@ -1,12 +1,12 @@
 angular.module('lolStats.landing', [])
 
   .controller('LandingController', ['$scope', '$location', 'landingService' ,function ($scope, $location, landingService) {
-    $scope.userName = '' || 'stryderjzw';
+    $scope.userName = '';
     $scope.season = 'SEASON2016';
     
     $scope.sendUsername = function(){
       landingService.sendData($scope.userName, $scope.season)
-        .then(function(res){ 
+        .then(function(res){
           landingService.data = res;
         })
         .then(function() { $location.path('/stats')});

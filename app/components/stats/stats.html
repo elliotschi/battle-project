@@ -1,13 +1,8 @@
 <div class="container-fluid main">
- <h1>Stats Page</h1>
- <p>{{ userName }}</p>
- <div ng-repeat="id in champList">  
-   <div>Champion: {{id}}</div>
+ <p class="username">Username: {{ userName }}</p>
+ <div class="name" ng-repeat="name in champList">  
+   <div>Champion: {{name}}</div>
+   <div>Win: {{champStats[$index].totalSessionsWon}}</div>
+   <div>Loss: {{champStats[$index].totalSessionsLost}}</div>
  </div>
- <div ng-repeat="stat in champStats">
-   <div>Won: {{stat.totalSessionsWon}}</div>
-   <div>Lost: {{stat.totalSessionsLost}}</div>
- </div>
-
-
 </div>
