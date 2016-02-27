@@ -1,0 +1,9 @@
+### git ignore ###
+server/landing/apiKeys.js
+# Logs
+logs
+*.log
+
+#Dependency directorys
+node_modules/
+app/lib/
