@@ -17,9 +17,7 @@ angular.module('lolStats.stats', [])
 
    //changes champids to names
    for (var j = 0; j < $scope.champList.length; j++) {
-    // $scope.champList[0] = "Total"
     var champId = $scope.champList[j].toString(); 
         $scope.champList[j] = champIds[champId];
     }
-    console.log($scope.champStats)
   }]);
