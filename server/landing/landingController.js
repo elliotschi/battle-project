@@ -13,6 +13,7 @@ module.exports = {
       if (!err && res.statusCode == 200) {
         var data = JSON.parse(body);
         var summonerId = data[name].id;
+        //have to add error handling when summonerId is wrong
         utils.getPlayerStats(req, res, summonerId, season);
       }
     })

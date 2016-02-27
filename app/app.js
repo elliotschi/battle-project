@@ -3,6 +3,7 @@ angular.module('lolStats', [
   'lolStats.landing',
   'lolStats.stats',
   'ui.router',
+  'ui.bootstrap'
   ])
 
 .config(function ($stateProvider, $urlRouterProvider) {
