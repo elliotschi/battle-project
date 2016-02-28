@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "body-parser": "latest",
+    "dotenv": "^2.0.0",
     "express": "latest",
     "mongoose": "latest",
     "morgan": "latest",
@@ -21,10 +22,13 @@
     "type": "git",
     "url": "git+https://github.com/Ycube/battle-project.git"
   },
-  "author": "Yale",
+  "author": "Yale Yuen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ycube/battle-project/issues"
+  },
+  "engines": {
+    "node": "4.1.1"
   },
   "homepage": "https://github.com/Ycube/battle-project#readme"
 }

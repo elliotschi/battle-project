@@ -1,11 +1,12 @@
 var apiInfo = require('./apiKey.js');
 var utils = require('../config/utils.js');
 var request = require('request');
+require('dotenv').config();
 
 module.exports = {
   getSummonerId : function (req, res, next) {
     var name = req.body.userName;
-    var riotApiKey = apiInfo.API_KEY;
+    var riotApiKey = process.env.LOL_API_KEY;
     var urlRiot = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + name + "?api_key=" + riotApiKey;
     var season = req.body.season;
     

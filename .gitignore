@@ -4,6 +4,9 @@ server/landing/apiKeys.js
 logs
 *.log
 
+#env
+.env
+
 #Dependency directorys
 node_modules/
 app/lib/
