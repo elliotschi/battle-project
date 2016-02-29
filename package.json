@@ -30,7 +30,8 @@
     "url": "https://github.com/Ycube/battle-project/issues"
   },
   "engines": {
-    "node": "4.1.1"
+    "node": "4.1.1",
+    "npm": "3.3.12"
   },
   "homepage": "https://github.com/Ycube/battle-project#readme"
 }
