@@ -1,6 +1,5 @@
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
-// var Router = require('../landing/landing');
 
 module.exports = function(app,express) {
   var router = express.Router();
