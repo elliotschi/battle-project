@@ -10,10 +10,9 @@
     "client/lib"
   ],
   "dependencies": {
-    "angular": "latest",
+    "angular": "~1.4.8",
     "angular-mocks": "~1.2.18",
     "angular-ui-router": "latest",
-    "bootstrap": "latest",
     "angular-bootstrap": "^1.2.1"
   }, 
   "resolutions": {
