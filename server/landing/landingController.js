@@ -1,4 +1,3 @@
-var apiInfo = require('./apiKey.js');
 var utils = require('../config/utils.js');
 var request = require('request');
 require('dotenv').config();

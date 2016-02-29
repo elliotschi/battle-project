@@ -1,4 +1,3 @@
-var apiInfo = require('../landing/apiKey.js')
 var request = require('request');
 require('dotenv').config();
 
