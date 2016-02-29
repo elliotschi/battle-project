@@ -1,20 +1,20 @@
-<div class="jumbotron">
+<div class="jumbotron text-center">
   <div class="container">
   <p>Know Your Stats</p>
-  <div class="container">
+  <div class="input-group col-md-4 col-md-offset-4">
     <form ng-submit="sendUsername()">
       <input userName="userName" ng-model="userName" type="text" placeholder="Enter Summoner Name" class="form-control">
-      <select ng-model='season' placeholder = '2016' multiple class="form-control">
+      <select ng-model='season' placeholder = '2016' class="form-control">
         <option value="SEASON2016">Season 6</option>
         <option value="SEASON2015">Season 5</option>
         <option value="SEASON2014">Season 4</option>
         <option value="SEASON3">Season 3</option>
       </select>
       <div class="btn-group">
-        <input type="submit" class="btn btn-default"></input>
+        <input type="submit" class="btn btn-info"></input>
       </div>
     </form>
-</div>
+  </div>
   </div>
 </div>
 
